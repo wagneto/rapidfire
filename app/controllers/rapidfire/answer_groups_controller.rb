@@ -11,7 +11,8 @@ module Rapidfire
 
       if @answer_group_builder.save
         redirect_to question_groups_path
-        #system('say "the books on the table"')
+        #system('say "ok"')
+        system('afplay /System/Library/Sounds/Ping.aiff')
       else
         render :new
       end
