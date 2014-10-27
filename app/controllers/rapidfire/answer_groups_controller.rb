@@ -11,6 +11,7 @@ module Rapidfire
 
       if @answer_group_builder.save
         redirect_to question_groups_path
+        #system('say "the books on the table"')
       else
         render :new
       end
