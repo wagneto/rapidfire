@@ -21,6 +21,10 @@ module Rapidfire
       respond_with(@question_group, location: rapidfire.question_groups_url)
     end
 
+    def edit
+      @question_group = QuestionGroup.find(params[:id])
+    end
+
     def destroy
       @question_group = QuestionGroup.find(params[:id])
       @question_group.destroy
@@ -34,6 +38,13 @@ module Rapidfire
         QuestionGroupResults.new(question_group: @question_group).extract
 
       respond_with(@question_group_results, root: false)
+    end
+
+    def update
+      @question_group = QuestionGroup.find(params[:id])
+      @question_group.save
+
+      respond_with(@question_group, location: rapidfire.question_groups_url)      
     end
 
     private
