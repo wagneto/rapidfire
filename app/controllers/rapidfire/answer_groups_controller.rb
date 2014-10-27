@@ -12,7 +12,7 @@ module Rapidfire
       if @answer_group_builder.save
         redirect_to question_groups_path
         #system('say "ok"')
-        system('afplay /System/Library/Sounds/Ping.aiff')
+        system('afplay /Users/wagnerfm/Code/demo-master/app/assets/urna.aif')
       else
         render :new
       end
