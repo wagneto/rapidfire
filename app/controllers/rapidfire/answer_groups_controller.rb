@@ -11,8 +11,9 @@ module Rapidfire
 
       if @answer_group_builder.save
         redirect_to question_groups_path
+        flash[:tocar_som] = true        
         #system('say "ok"')
-        system('afplay /Users/wagnerfm/Code/demo-master/app/assets/urna.aif')
+        #system('afplay /Users/wagnerfm/Code/demo-master/app/assets/urna.aif')
       else
         render :new
       end
