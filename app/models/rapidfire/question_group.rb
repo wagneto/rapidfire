@@ -5,8 +5,8 @@ module Rapidfire
 
 	def self.search(search)
 	   if search
-	     search_condition = "%" + search + "%"
-	     where(['code LIKE ? OR teacher LIKE ?', search_condition, search_condition])
+	     search_condition = search
+	     where(['code = ?', search_condition])
 	   end
 	end	
 

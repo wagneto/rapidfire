@@ -5,8 +5,12 @@ module Rapidfire
     respond_to :json, only: :results
 
     def index
-      @question_groups = QuestionGroup.search(params[:search])
-      #@question_groups = QuestionGroup.all
+      if can_administer?
+        @question_groups = QuestionGroup.all
+      else
+        @question_groups = QuestionGroup.search(params[:search])
+      end
+      
       respond_with(@question_groups)
     end
 
