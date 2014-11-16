@@ -6,7 +6,8 @@ module Rapidfire
 
     def index
       if can_administer?
-        @question_groups = QuestionGroup.all
+        @question_groups = QuestionGroup.order("name").page(params[:page]).per_page(10)
+        #@question_groups = QuestionGroup.all
       else
         @question_groups = QuestionGroup.search(params[:search])
       end
