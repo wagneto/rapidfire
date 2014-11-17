@@ -11,7 +11,7 @@ module Rapidfire
 
       if @answer_group_builder.save
         redirect_to question_groups_path
-        flash[:tocar_som] = true        
+        flash[:tocar_som] = "Voto computado com sucesso!"
         #system('say "ok"')
         #system('afplay /Users/wagnerfm/Code/demo-master/app/assets/urna.aif')
       else
