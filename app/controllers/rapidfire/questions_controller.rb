@@ -22,11 +22,14 @@ module Rapidfire
       @question.save
 
       respond_with(@question, location: index_location)
+      flash[:notice] = "Questão criada com sucesso!"      
     end
 
     def edit
       @question = QuestionForm.new(:question => @question)
       respond_with(@question)
+
+      flash[:notice] = "Questão editada com sucesso!"      
     end
 
     def update
@@ -40,6 +43,8 @@ module Rapidfire
     def destroy
       @question.destroy
       respond_with(@question, location: index_location)
+
+      flash[:notice] = "Questão apagada com sucesso!"            
     end
 
     private
