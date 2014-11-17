@@ -18,7 +18,7 @@ module Rapidfire
     end 
 
     if Rails::VERSION::MAJOR == 3
-      attr_accessible :name
+      attr_accessible :name, :teacher, :room, :date, :shift
     end
 
   end
