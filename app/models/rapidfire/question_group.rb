@@ -1,7 +1,7 @@
 module Rapidfire
   class QuestionGroup < ActiveRecord::Base
     has_many  :questions
-    validates :name, :teacher, :room, :date, :shift, :presence => true
+    validates :name, :teacher, :room, :date, :shift, :course, :presence => true
 
   	def self.search(search)
   	   if search
