@@ -12,8 +12,17 @@ module Rapidfire
       if @answer_group_builder.save
         redirect_to question_groups_path
         flash[:tocar_som] = "Voto computado com sucesso!"
-        #system('say "ok"')
-        #system('afplay /Users/wagnerfm/Code/demo-master/app/assets/urna.aif')
+
+        @question_group = QuestionGroup.find(params[:question_group_id])
+        
+        if @question_group.quantity_end == nil
+          @quantity_end = @question_group.quantity.to_i - 1
+        else  
+          @quantity_end = @question_group.quantity_end.to_i - 1
+        end
+
+        @question_group.update(quantity_end: @quantity_end)
+
       else
         render :new
       end

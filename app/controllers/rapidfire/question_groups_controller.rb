@@ -248,7 +248,7 @@ DEFICIENTE")
     private
     def question_group_params
       if Rails::VERSION::MAJOR == 4
-        params.require(:question_group).permit(:name, :teacher, :active, :code, :room, :date, :shift, :course, :date_end, :quantity)
+        params.require(:question_group).permit(:name, :teacher, :active, :code, :room, :date, :shift, :course, :date_end, :quantity, :quantity_end)
       else
         params[:question_group]
       end
