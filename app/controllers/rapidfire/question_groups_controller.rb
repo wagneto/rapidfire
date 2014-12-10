@@ -335,24 +335,41 @@ REGULAR
 FRACO
 SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
-        @question13 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Long", 
-          question_text: "14) Informe, três pontos positivos do instrutor. Um dos pontos pode ser algo que aprendeu e euq realmente fez diferença em você.", position: "14", 
-          answer_options: "ÓTIMO
-BOM
-REGULAR
-FRACO
-SEM RESPOSTA")
-
-        @question14 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Long", 
-          question_text: "15) Informe três pontos em que o instrutor poderia melhorar.", position: "15", 
+        @question13 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
+          question_text: "14) QUALIDADE - As atividades avaliataivas são bem elaboradas?", position: "14", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
 FRACO
 SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
-        @question15 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Numeric", 
-          question_text: "16) Em geral de 01 a 10 qual seria sua nota para o instrutor:", position: "16", 
+        @question14 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
+          question_text: "15) QUALIDADE - As atividades são de acordo com os conteúdos vistos em sala?", position: "15", 
+          answer_options: "ÓTIMO
+BOM
+REGULAR
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
+
+
+        @question15 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Long", 
+          question_text: "16) Informe, três pontos positivos do instrutor. Um dos pontos pode ser algo que aprendeu e euq realmente fez diferença em você.", position: "16", 
+          answer_options: "ÓTIMO
+BOM
+REGULAR
+FRACO
+SEM RESPOSTA")
+
+        @question16 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Long", 
+          question_text: "17) Informe três pontos em que o instrutor poderia melhorar.", position: "17", 
+          answer_options: "ÓTIMO
+BOM
+REGULAR
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
+
+        @question17 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Numeric", 
+          question_text: "18) Em geral de 01 a 10 qual seria sua nota para o instrutor:", position: "18", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
@@ -375,6 +392,9 @@ SEM RESPOSTA", :validation_rules => {:presence => "1"})
         @question13.save
         @question14.save
         @question15.save
+        @question16.save
+        @question17.save
+        @question18.save
 
       end
 
