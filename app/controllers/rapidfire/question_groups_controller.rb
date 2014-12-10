@@ -394,7 +394,6 @@ SEM RESPOSTA", :validation_rules => {:presence => "1"})
         @question15.save
         @question16.save
         @question17.save
-        @question18.save
 
       end
 
