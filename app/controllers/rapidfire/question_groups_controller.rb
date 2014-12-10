@@ -366,7 +366,7 @@ SEM RESPOSTA")
 BOM
 REGULAR
 FRACO
-SEM RESPOSTA", :validation_rules => {:presence => "1"})
+SEM RESPOSTA")
 
         @question17 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Numeric", 
           question_text: "18) Em geral de 01 a 10 qual seria sua nota para o instrutor:", position: "18", 
@@ -374,7 +374,7 @@ SEM RESPOSTA", :validation_rules => {:presence => "1"})
 BOM
 REGULAR
 FRACO
-SEM RESPOSTA", :validation_rules => {:presence => "1"})
+SEM RESPOSTA")
 
         @question.save
         @question1.save
