@@ -33,154 +33,176 @@ module Rapidfire
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question1 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "2) CONTEÚDO DO COMPONENTE - Qualidade e quantidade das informações atenderam suas expectativas", position: "2", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question2 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "3) CONTEÚDO DO COMPONENTE - Método utilizado", position: "3", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question3 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "4) CONTEÚDO DO COMPONENTE - Equilíbrio entre teoria e/ou prática – se houver prática", position: "4", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question4 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "5) ATUAÇÃO DO DOCENTE - Clareza na exposição dos assuntos", position: "5", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question5 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "6) ATUAÇÃO DO DOCENTE - Facilidade em esclarecer dúvidas", position: "6", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question6 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "7) ATUAÇÃO DO DOCENTE - Relacionamento com a turma", position: "7", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question7 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "8) ATUAÇÃO DO DOCENTE - Assiduidade e cumprimento do  horário", position: "8", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question8 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "9) ATUAÇÃO DO DOCENTE - Domínio do conteúdo", position: "9", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question9 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "10) ATUAÇÃO DO DOCENTE - Utilização dos recursos didáticos", position: "10", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question10 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "11) MATERIAL DIDÁTICO - Facilidade de compreensão do texto", position: "11", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question11 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "12) MATERIAL DIDÁTICO - Clareza das informações e conceitos apresentados", position: "12", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question12 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "13) MATERIAL DIDÁTICO - Conceitos e informações técnicas corretas e atualizadas", position: "13", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question13 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "14) MATERIAL DIDÁTICO - Adequação da linguagem a sua realidade de trabalho", position: "14", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question14 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "15) MATERIAL DIDÁTICO - Relevância do conteúdo para sua prática profissional", position: "15", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question15 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "16) MATERIAL DIDÁTICO - Qualidade das apostilas (encadernação, impressão e ilustração)", position: "16", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question16 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "17) MATERIAL DIDÁTICO - Qualidade dos Material audiovisual – se houver (apresentação, vídeo)", position: "17", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question17 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "18) ORGANIZAÇÃO - Carga horária x conteúdo", position: "18", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question18 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "19) ORGANIZAÇÃO - Horário do curso", position: "19", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question19 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "20) ORGANIZAÇÃO - Instalações", position: "20", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question20 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "21) ORGANIZAÇÃO - Coordenação", position: "21", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question21 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "22) ORGANIZAÇÃO - Materiais de consumo – se houver", position: "22", 
           answer_options: "MUITO BOM
 BOM
 REGULAR
-DEFICIENTE", :validation_rules => {:presence => "1"})      
+DEFICIENTE
+SEM RESPOSTA", :validation_rules => {:presence => "1"})      
 
         @question22 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Long", 
           question_text: "23) COMENTÁRIOS E SUGESTÕES", position: "23", 
@@ -216,110 +238,126 @@ DEFICIENTE", :validation_rules => {:presence => "1"})
           question_text: "1) PONTUALIDADE - É frequente?", position: "1", 
           answer_options: "SIM
 NÃO
-ÀS VEZES", :validation_rules => {:presence => "1"})
+ÀS VEZES
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question1 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "2) PONTUALIDADE - Chega e sai no horário?", position: "2", 
           answer_options: "SIM
 NÃO
-ÀS VEZES", :validation_rules => {:presence => "1"})
+ÀS VEZES
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question2 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "3) DOMÍNIO DO CONTEÚDO - Explica com clareza o conteúdo nas aulas teóricas?", position: "3", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question3 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "4) DOMÍNIO DO CONTEÚDO - Explica com clareza as atividades nas aulas práticas?", position: "4", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question4 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "5) DOMÍNIO DO CONTEÚDO - Apresenta conhecimentos atualizados sobre o assunto? Equipamentos?", position: "5", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question5 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "6) DOMÍNIO DO CONTEÚDO - Esclarece as dúvidas da matéria e revisa o conteúdo?", position: "6", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question6 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "7) PLANEJAMENTO - É organizado?", position: "7", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question7 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "8) PLANEJAMENTO - Leva o material necessário para as aulas?", position: "8", 
           answer_options: "SIM
 NÃO
-ÃS VEZES", :validation_rules => {:presence => "1"})
+ÃS VEZES
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question8 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "9) PLANEJAMENTO - As aulas são bem planejadas, estão de acordo com o conteúdo?", position: "9", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question9 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "10) PLANEJAMENTO - As aulas são dinâmicas, criativas e interessantes?", position: "10", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question10 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "11) PLANEJAMENTO - Tinha material para as aulas práticas?", position: "11", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
         
         @question11 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "12) DISCIPLINA - Mantém a disciplina dentro de sala e ou oficina?", position: "12", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question12 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Radio", 
           question_text: "13) DISCIPLINA - Provoca o interesse da turma durante as aulas?", position: "13", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question13 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Long", 
           question_text: "14) Informe, três pontos positivos do instrutor. Um dos pontos pode ser algo que aprendeu e euq realmente fez diferença em você.", position: "14", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO")
+FRACO
+SEM RESPOSTA")
 
         @question14 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Long", 
           question_text: "15) Informe três pontos em que o instrutor poderia melhorar.", position: "15", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question15 = Question.new(question_group_id: QuestionGroup.last.id.inspect, type: "Rapidfire::Questions::Numeric", 
           question_text: "16) Em geral de 01 a 10 qual seria sua nota para o instrutor:", position: "16", 
           answer_options: "ÓTIMO
 BOM
 REGULAR
-FRACO", :validation_rules => {:presence => "1"})
+FRACO
+SEM RESPOSTA", :validation_rules => {:presence => "1"})
 
         @question.save
         @question1.save
